@@ -1,0 +1,79 @@
+body {
+    background-color: black;
+    height: 100%;
+}
+
+.navItem {
+    width: 13vw;
+}
+#animLogo {
+    border-radius: 10px;
+
+}
+
+
+#content{
+    position: fixed;
+    margin: 0;
+    left: 16vw;
+    width: 85vw;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+
+
+}
+
+#heroBlob{
+    height: 100%;
+    filter: blur(30px);
+}
+
+nav{
+    position: fixed;
+    margin: 0;
+    margin-left: 1vw;
+    padding: 1vw;
+    top: 0;
+    left: 0;
+    min-width: 13vw;
+    height: 100%;
+
+    display: flex;
+    gap: 2vw;
+    flex-direction: column;
+    justify-items: center;
+
+}
+.navButton{
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(0,0,0,0);
+    font-family: "Georgia";
+    font-size: 2vw;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    transition: background-color 1s ease;
+}
+.navButton:hover{
+    background-color: rgba(0,0,0,0.3);
+}
+
+#navBg{
+    background-image: linear-gradient(-45deg, cyan, magenta, turquoise, darkorchid);
+    background-size: 800%;
+    filter: blur(30px);
+    animation: gradient 10s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}

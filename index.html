@@ -6,26 +6,29 @@
     <title>Page Title</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src="https://unpkg.com/wilderness/dist/wilderness.production.js"></script>
     <script src='main.js'></script>
+
 </head>
 <body>
-    <div class="blob">
-        <h1>Welcome</h1>
-    </div>
-    <div class="blob">
-        <nav>
-            <ul>
-                <li>
-                    <button>Bird Flock</button>
-                </li>
-                <li>
-                    <button>The Garden</button>
-                </li>
-                <li>
-                    <button>Ant Colony</button>
-                </li>
-            </ul>
-        </nav>
-    </div>
+<nav id="navBg"></nav>
+<nav>
+    <img class="navItem" id="animLogo" src="assets/animLogo.gif" alt="gif of a spinning amongus character">
+    <button class="navButton navItem">Bird Flock</button>
+    <button class="navButton navItem">The Garden</button>
+    <button class="navButton navItem">Ant Colony</button>
+</nav>
+
+<div id="content">
+    <svg id="heroBlob" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+            <radialGradient id="radGrad">
+                <stop stop-color="var(--blobStartColor)" offset="0"></stop>
+                <stop stop-color="var(--blobEndColor)" offset="1"></stop>
+            </radialGradient>
+        </defs>
+        <path d="" fill="url(#radGrad)"/>
+    </svg>
+</div>
 </body>
 </html>
